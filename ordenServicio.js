@@ -1,14 +1,12 @@
 import Docxtemplater from "docxtemplater";
 import PizZip from "pizzip";
-
-const {pathname: root} = new URL('./', import.meta.url)
-
 import fs from 'fs';
 import path  from "path";
 
+const {pathname: root} = new URL('./', import.meta.url)
 
 const content = fs.readFileSync(
-    path.resolve(root, "SERV-CUE-016-12-2021.docx"),
+    path.resolve(root, "plantillaODS.docx"),
     "binary"
 );
 
@@ -20,18 +18,25 @@ const doc = new Docxtemplater(zip, {
     linebreaks: true,
 });
 
-const data = {
-    repse : 'AR4421/2021',
-    contrato_macro : 'SERV-CUE-016/12-2021',
-    cliente : 'BRIDGESTONE DE MÉXICO, S.A. DE C.V.',
-    representante_legal1_cliente:  'JOSÉ ANTONIO RAMON PEDRERO',
-    representante_legal2_cliente: 'ENRIQUE RAFAEL VIÑAS OCAMPO',
-    prestador : 'ASESORÍA Y EQUIPOS DE INSPECCIÓN, S.A. DE C.V.',
-    pro : 'el',
-    representante_prestador: 'EDGAR ESCALANTE GONZÁLEZ.',
-    RFC_cliente: 'BFM910826TW6',
-    RFC_prestador: 'AEI790419254',
-    NSS_prestador: 'D502587610'
+const dataODS = {
+    empresa:'BRDIGESTONE NEUMATICOS DE MONTERREY, SA DE CV',
+    planta:'MONTERREY',
+    repse:'AR62838/2021',
+    ordenCompra:'5000184863',
+    ordenServicio:'O000241',
+    folio:'SERV-MTY-035/01-2022',
+    representanteLegal1:'OMAR DÍAZ SOLANO',
+    emailRepresentante1:'diazomar@bfusa.com',
+    representanteLegal2:'EDGAR ERNESTO HERRERA HERNÁNDEZ',
+    emailRepresentante2:'herreraedgar@bfusa.com',
+    representantePrestador:'JONHATTAN DANIEL HERRERA VÁZQUEZ.',
+    emailPrestador:'jherrera@proadinsa.com',
+    rfc_prestador:'PRO160707R43',
+    descripcion:'Retiro de lámina R101 en cubierta de cuarto de mymec.',
+    trabajadores:'5 TRABAJADORES',
+    inicio:'11 de abril del 2022',
+    fin:'29 de abril del 2022',
+    total:'128,792.40'
 }
 doc.render(data);
 

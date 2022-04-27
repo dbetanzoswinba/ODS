@@ -1,0 +1,19 @@
+const dataODS = {
+    empresa:'',
+    planta:'',
+    repse:'',
+    ordenCompra:'',
+    ordenServicio:'',
+    folio:'',
+    representanteLegal1:'',
+    emailRepresentante1:'',
+    representanteLegal2:'',
+    emailRepresentante2:'',
+    representantePrestador:'',
+    rfc_prestador:'',
+    descripcion:'',
+    trabajadores:'',
+    inicio:'',
+    fin:'',
+    total:''
+}
