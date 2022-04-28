@@ -17,3 +17,24 @@ const dataODS = {
     fin:'',
     total:''
 }
+
+// const dataODS = {
+//     empresa:'BRDIGESTONE NEUMATICOS DE MONTERREY, SA DE CV',
+//     planta:'MONTERREY',
+//     repse:'AR62838/2021',
+//     ordenCompra:'5000184863',
+//     ordenServicio:'O000241',
+//     folio:'SERV-MTY-035/01-2022',
+//     representanteLegal1:'OMAR DÍAZ SOLANO',
+//     emailRepresentante1:'diazomar@bfusa.com',
+//     representanteLegal2:'EDGAR ERNESTO HERRERA HERNÁNDEZ',
+//     emailRepresentante2:'herreraedgar@bfusa.com',
+//     representantePrestador:'JONHATTAN DANIEL HERRERA VÁZQUEZ.',
+//     emailPrestador:'jherrera@proadinsa.com',
+//     rfc_prestador:'PRO160707R43',
+//     descripcion:'Retiro de lámina R101 en cubierta de cuarto de mymec.',
+//     trabajadores:'5 TRABAJADORES',
+//     inicio:'11 de abril del 2022',
+//     fin:'29 de abril del 2022',
+//     total:'128,792.40'
+// }
