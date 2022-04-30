@@ -276,6 +276,13 @@
   "resolved" "https://registry.npmjs.org/crypto-random-string/-/crypto-random-string-2.0.0.tgz"
   "version" "2.0.0"
 
+"csv-parser@^3.0.0":
+  "integrity" "sha512-s6OYSXAK3IdKqYO33y09jhypG/bSDHPuyCme/IdEHfWpLf/jKcpitVFyOC6UemgGk8v7Q5u2XE0vvwmanxhGlQ=="
+  "resolved" "https://registry.npmjs.org/csv-parser/-/csv-parser-3.0.0.tgz"
+  "version" "3.0.0"
+  dependencies:
+    "minimist" "^1.2.0"
+
 "debug@^2.6.8", "debug@2.6.9":
   "integrity" "sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA=="
   "resolved" "https://registry.npmjs.org/debug/-/debug-2.6.9.tgz"

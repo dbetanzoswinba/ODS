@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "csv-parser": "^3.0.0",
     "docxtemplater": "^3.29.0",
     "express": "^4.17.3",
     "nodemon": "^2.0.15",

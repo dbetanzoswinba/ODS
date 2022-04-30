@@ -3,9 +3,13 @@ import PizZip from "pizzip";
 import fs from 'fs';
 import convertir from 'numero-a-letras';
 
-const nombre = 'ODSO';
+const nombre = 'ODSO000';
 
 export const generarODS = (dataODS)=>{
+    const data = dataODS.total.replace(',','');
+    dataODS.total = data;
+    let nombreOrden = nombre+dataODS.ordenServicio 
+    dataODS.ordenServicio = nombreOrden;
     dataODS.totalLetra = convertir.NumerosALetras(Number(dataODS.total)).toUpperCase();
     const content = fs.readFileSync(
         ".\\plantillaODS.docx",
@@ -21,7 +25,7 @@ export const generarODS = (dataODS)=>{
         type: "nodebuffer",
         compression: "DEFLATE",
     });
-    fs.writeFile(`./docs/${nombre}.docx`,buf, (err) => {
+    fs.writeFile(`./docs/${dataODS.ordenServicio}.docx`,buf, (err) => {
         if (err) throw err;
         console.log("Archivo generado correctamente");
     }); 

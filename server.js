@@ -1,4 +1,5 @@
 import express from "express";
+import { leerDocumentos } from "./controllers/documentoControler.js";
 import { generarODS } from "./controllers/ordenServicio.js";
 
 //const app = express();
@@ -9,7 +10,7 @@ import { generarODS } from "./controllers/ordenServicio.js";
 //     console.log(`Servidor corriendo en el puerto ${PORT}`);
 // });
 
-const dataODS = {
+/* const dataODS = {
     empresa:'BRDIGESTONE NEUMATICOS DE MONTERREY, SA DE CV',
     planta:'MONTERREY',
     repse:'AR62838/2021',
@@ -28,7 +29,7 @@ const dataODS = {
     inicio:'11 de abril del 2022',
     fin:'29 de abril del 2022',
     total:'152320.00'
-}
+} */
 
-
-generarODS(dataODS);
+const resultado = leerDocumentos('.\\consolidado.csv');
+console.log(resultado);
